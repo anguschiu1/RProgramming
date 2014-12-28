@@ -20,5 +20,6 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         pollutantvector <- append(pollutantvector,data[[pollutant]])
     }
     meanResult <- mean(pollutantvector,na.rm = T )
-    round(meanResult,3)
+#     round(meanResult,3)
+    meanResult
 }
